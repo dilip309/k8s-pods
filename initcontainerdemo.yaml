@@ -1,13 +1,13 @@
 ---
 apiVersion: v1
 kind: Pod
-metadata: 
+metadata:
   name: init-demo
   labels:
     app: nginx
-    purpose: initdemp
+    purpose: initdemo
 spec:
-  initcontainers:
+  initContainers:
     - name: init1
       image: alpine
       command:
